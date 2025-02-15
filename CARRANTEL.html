@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Service 1</title>
+    <!-- <link rel="stylesheet" href="CARRANTEL.css"> -->
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; 
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    background: #555757ba;
+    color: white;
+    padding: 10px 20px;
+}
+
+.head ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.head ul li {
+    /* margin: 0 15px; */
+    display: inline;
+    margin: 0 15px;
+}
+
+.head ul li a {
+    /* color: white;
+    text-decoration: none; */
+    line-height: 80px;
+    color: rgb(250, 247, 247);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background: rgba(231, 223, 223, 0.7);
+    border-radius: 6px;
+}
+section.bich{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: url('R (1).jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* Hero Section */
+#bich
+ {
+     /* background: url('R.jpg') no-repeat center center/cover;  */
+     color: rgb(249, 246, 246);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* #bich h2 {
+    font-size: 36px;
+    color: black;
+    margin-top: 500px;
+    padding: 300px;
+}
+
+#bich h4 {
+    font-size: 20px;
+    margin: 30px 0;
+    color:black;
+}
+#bich h2, #bich h4 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+} */
+
+
+/* https://wallpaperaccess.com/full/774053.jpg */ 
+
+/* new page added */
+
+.home {
+    background-color: whitesmoke;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .main-sec {
+    display: flex;
+    column-gap: 50px;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home .right {
+    width: 400px;
+    height: 300px;
+    margin: 78px;
+    padding: 30px;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(155deg, #a7ceff, #bfc9cb);
+}
+
+
+.home .left {
+    padding: 30px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    flex-direction: column;
+    width: 552px;
+    /* background-color: green; */
+}
+
+.home .left .btn input {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0043ff8c;
+}
+
+.home .main-sec .left .txt1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.home .right img {
+    width: 32vw;
+    border-radius: 20%;
+    filter: drop-shadow(20px 50px 25px #b3e3e3);
+}
+
+
+.car-sec {
+    /* height: 192vh; */
+    padding: 20px;
+    margin: 5px;
+    /* justify-content: center; */
+    flex-direction: column;
+    display: flex;
+    /* background-color: red; */
+}
+
+.car-sec .btn input {
+    padding: 10px 25px;
+    border: 1px solid darkgray;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.car-sec .main-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.car-sec .main-sec .box {
+    /* background: red; */
+    overflow: hidden;
+    width: 365px;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+}
+
+.car-sec .main-sec .box .details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    row-gap: 15px;
+}
+
+.car-sec .main-sec .box .details .car-name {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.car-sec .main-sec .box .review {
+    display: flex;
+    column-gap: 5px;
+}
+
+.car-sec .main-sec .box .review i {
+    color: orange;
+}
+
+.car-sec .main-sec .box .review p {
+    color: darkgray;
+}
+
+.car-sec .main-sec .box .feature {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 70px;
+    row-gap: 20px;
+}
+
+.car-sec .main-sec .box .feature p i {
+    color: #0043ff8c;
+    font-size: 20px;
+}
+
+.car-sec .main-sec .box .price {
+    display: flex;
+    border-top: 1px solid darkgray;
+    column-gap: 167px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.car-sec .main-sec .box .price p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.car-sec .main-sec .box .price button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0043ff8c;
+    height: 35px;
+    width: 100px;
+}
+
+.car-sec .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.car-sec .txt .txt1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.car-sec .txt .txt1 span {
+    color: #0043ff8c;
+}
+
+.support-sec {
+    height: 390px;
+    padding: 30px;
+    /* justify-content: center; */
+    flex-direction: column;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.support-sec .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.support-sec .txt .txt1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.support-sec .txt .txt1 span {
+    color: #0043ff8c;
+}
+
+.support-sec .main-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.support-sec .main-sec .box {
+    /* background: red; */
+    padding: 20px;
+    width: 575px;
+    display: flex;
+    column-gap: 36px;
+    /* flex-direction: column; */
+    row-gap: 20px;
+}
+
+.support-sec .main-sec .box i {
+    font-size: 30px;
+    background: #0043ff8c;
+    width: fit-content;
+    padding: 34px;
+    border-radius: 15px;
+}
+
+.support-sec .main-sec .box .txt-sec {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.support-sec .main-sec .box .txt-sec .txt1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.achie-sec {
+    height: 690px;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+}
+
+.achie-sec .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.achie-sec .txt .txt1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.achie-sec .txt .txt1 span {
+    color: #0043ff8c;
+}
+
+.achie-sec .main-sec .box {
+    background-color: white;
+    width: 300px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    border-radius: 10px;
+}
+
+.achie-sec .main-sec .box .txt1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.achie-sec .main-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.start-sec {
+    height: 390px;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+}
+
+.start-sec .main-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #17c5be, #1c243a);
+    border-radius: 10px;
+    padding: 30px;
+    column-gap: 50px;
+}
+
+.start-sec .main-sec .left {
+    /* background: greenyellow; */
+    padding: 20px;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.start-sec .main-sec .left .txt1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.start-sec .main-sec .left .btn button {
+    padding: 10px 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.start-sec .main-sec .right {
+    /* background: rgb(47, 144, 255); */
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    width: 300px;
+    align-items: center;
+
+    /* width: 400px;
+    height: 300px;
+    margin: 78px;
+    padding: 30px; */
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+    background-image: linear-gradient(155deg, #a7ceff, #bfc9cb);
+}
+
+.start-sec .main-sec .right img {
+    width: 50vw;
+    filter: drop-shadow(20px 50px 25px #b3e3e3);
+}
+
+.foot-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: whitesmoke;
+}
+
+.foot-sec .item{
+    display: flex;
+    column-gap: 20px;
+}
+
+.foot-sec .item a{
+    text-decoration: none;
+    color: black;
+}
+
+    </style>
+</head>
+    <body>
+        <nav class="head">
+            <h1>Car Rental</h1>
+            <ul>
+                <li><a href="zcar.html">Home</a></li>
+                <li><a href="USERLOGIN.html">Login</a></li>
+                <li><a href="USERSIGNIN.html">Register</a></li>
+            </ul>
+        </nav>
+    
+        <!-- <nav>
+            <div class="head">
+                  <h1>HUNNY Car Rentals</h1>
+                    <marquee behavior="" direction="left"><h1>HUNNY Car Rental</h1></marquee>
+            </div>
+            <ul>
+                <li><a href="CARRANTEL.html">Home</a></li>
+                <li><a href="#car-sec">Cars</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="click">
+                <a href="USERLOGIN.html" class="log">Log in</a>    
+                 <a href="USERSIGNIN.html" class="sign">Sign Up</a>
+            </div>
+        </nav>
+
+      <section class="bich">
+
+                  <h2>Welcome To Hunny Car Rental. <br>Find Your Perfect Ride</h2> 
+                 <h4>Book your dream car at the best price!   </h4> 
+      </section>
+    <br><br><br><br><br> -->
+
+        <!-- <div class="home">
+            <div class="main-sec">
+                <div class="left">
+                    <p class="txt1">Easy And Fast Way To <span style="color: #0043ff8c;">Rent</span> Your Car</p> -->
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus nobis similique ab
+                        praesentium itaque dolore quidem debitis distinctio laborum!</p> -->
+                    <!-- <div class="btn">
+                        <input class="car" type="button" value="Rent Car">
+                    </div> -->
+                <!-- </div>
+    
+                <div class="right">
+                     <img src="R (1).jpg" alt="bmw"> 
+                </div>
+            </div>
+        </div> -->
+    
+        
+        <section class="car-sec">
+            <!-- <div class="txt">
+                <p class="txt1">Latest <span>Inventory</span></p>
+                <p class="txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ipsa!</p>
+            </div> -->
+    
+            <div class="main-sec">
+                <div class="box">
+                    <img style="width: 365px;"
+                        src="scorpio-n.png"
+                        alt="scorpio-n">
+                    <div class="details">
+    
+                        <p class="car-name">Scorpio-n</p>
+    
+                        <div class="review">
+                            <p>( 10k Reviews )</p><br>
+                        </div>
+    
+                        <div class="feature">
+                            <p>Premium Economy Cab</p>
+                            <p><i class="fa-solid fa-chair"></i> Seats: 7</p>
+                        </div>
+    
+                        <div class="price">
+                            <p>RS 3000/day</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img style="width: 365px;"
+                        src="https://images.unsplash.com/photo-1633359064754-804ba55e733f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmVybmF8ZW58MHx8MHx8fDA%3D"
+                        alt="">
+                    <div class="details">
+    
+                        <p class="car-name">Hyundai Verna</p>
+    
+                        <div class="review">
+                            <!-- <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i> -->
+                            <p>( 10k Reviews )</p>
+                        </div>
+    
+                        <div class="feature">
+                            <p><i class="fa-solid fa-chair"></i> Premium Economy Cab</p>
+                             <p><i class="fa-solid fa-charging-station"></i> seats: 5</p>
+                            <!--<p><i class="fa-solid fa-car-battery"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-cable-car"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-car-side"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-caravan"></i> 6 Seat</p> -->
+                        </div>
+    
+                        <div class="price">
+                            <p>RS 2000/day</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img style="width: 365px;"
+                        src="thar.png"
+                        alt="Thar">
+                    <div class="details">
+    
+                        <p class="car-name">Thar</p>
+    
+                        <div class="review">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <p>( 10k Reviews )</p>
+                        </div>
+    
+                        <div class="feature">
+                            <p><i class="fa-solid fa-chair"></i>Offroading</p>
+                            <p><i class="fa-solid fa-charging-station"></i>Seat: 6 </p>
+                            <!-- <p><i class="fa-solid fa-car-battery"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-cable-car"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-car-side"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-caravan"></i> 6 Seat</p> -->
+                        </div>
+    
+                        <div class="price">
+                            <p>Rs 2500/day</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img style="width: 365px;"
+                        src="ertiga.jpg"
+                        alt="">
+                    <div class="details">
+    
+                        <p class="car-name"> Maruti Ertiga</p>
+    
+                        <div class="review">
+                            <p>( 10k Reviews )</p>
+                        </div>
+    
+                        <div class="feature">
+                            <p><i class="fa-solid fa-chair"></i> Family Car</p>
+                            <p><i class="fa-solid fa-charging-station"></i>seats: 7 </p>
+                            <!-- <p><i class="fa-solid fa-car-battery"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-cable-car"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-car-side"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-caravan"></i> 6 Seat</p> -->
+                        </div>
+    
+                        <div class="price">
+                            <p>RS3000/day</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img style="width: 365px;"
+                        src="innova.jpg"
+                        alt="">
+                    <div class="details">
+    
+                        <p class="car-name">Innova</p>
+    
+                        <div class="review">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <p>( 10k Reviews )</p>
+                        </div>
+    
+                        <div class="feature">
+                            <p><i class="fa-solid fa-chair"></i> touriest</p>
+                            <p><i class="fa-solid fa-charging-station"></i> 7 Seat</p>
+                            <!-- <p><i class="fa-solid fa-car-battery"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-cable-car"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-car-side"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-caravan"></i> 6 Seat</p> -->
+                        </div>
+    
+                        <div class="price">
+                            <p>RS 1700/day</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img style="width: 365px;"
+                        src="toyota.jpg"
+                        alt="">
+                    <div class="details">
+    
+                        <p class="car-name">Toyota</p>
+    
+                        <div class="review">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <p>( 10k Reviews )</p>
+                        </div>
+    
+                        <div class="feature">
+                            <p><i class="fa-solid fa-chair"></i> touriest car </p>
+                            <p><i class="fa-solid fa-charging-station"></i> seats: 7</p>
+                            <!-- <p><i class="fa-solid fa-car-battery"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-cable-car"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-car-side"></i> 6 Seat</p>
+                            <p><i class="fa-solid fa-caravan"></i> 6 Seat</p> -->
+                        </div>
+    
+                        <div class="price">
+                            <p>RS 1800/day</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="support-sec">
+            <div class="txt">
+                <p class="txt1">Why <span>Choose</span> Us</p>
+                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, cupiditate!</p> -->
+            </div>
+    
+            <div class="main-sec">
+                <div class="box">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="txt-sec">
+                        <p class="txt1">24 Hour Support</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque sequi animi ab
+                            corporis, necessitatibus eum cum vel rerum nisi.</p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <i class="fa-solid fa-flag-checkered"></i>
+                    <div class="txt-sec">
+                        <p class="txt1">Best Price</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque sequi animi ab
+                            corporis, necessitatibus eum cum vel rerum nisi.</p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <i class="fa-solid fa-certificate"></i>
+                    <div class="txt-sec">
+                        <p class="txt1">Verified License</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque sequi animi ab
+                            corporis, necessitatibus eum cum vel rerum nisi.</p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                    <div class="txt-sec">
+                        <p class="txt1">Free Cancelation</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque sequi animi ab
+                            corporis, necessitatibus eum cum vel rerum nisi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="achie-sec">
+            <div class="txt">
+                <p class="txt1">Our <span>Achievement</span></p>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, provident.</p> -->
+            </div>
+    
+            <div class="main-sec">
+                <div class="box">
+                    <p class="txt1">4000+</p>
+                    <p>Active Member</p>
+                </div>
+    
+                <div class="box">
+                    <p class="txt1">3000+</p>
+                    <p>Car Color</p>
+                </div>
+    
+                <div class="box">
+                    <p class="txt1">6000+</p>
+                    <p>Car Model</p>
+                </div>
+    
+                <div class="box">
+                    <p class="txt1">10k</p>
+                    <p>Positive Rating</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="start-sec">
+            <div class="main-sec">
+                <div class="left">
+                    <p class="txt1">Ready To Get Start?</p>
+                    <!-- <p class="txt2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus ipsa eos neque quo consectetur totam perferendis aut quos sequi expedita.</p> -->
+                    <div class="btn">
+                        <button>Contact Us</button>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    
+        <footer class="foot-sec">
+            <div class="logo">
+                <h1>HUNNY CAR RENTAL</h1>
+            </div>
+    
+            <div class="copy">
+                <p>Copyright &copy; 2025 Design By Virendra</p>
+            </div>
+    
+            <div class="item">
+                <a href="/">Website Terms</a>
+                <a href="/">Contact Us</a>
+                <a href="/">Privacy Policy</a>
+            </div>
+        </footer>
+      </div>
+            
+   </body>
+</html>

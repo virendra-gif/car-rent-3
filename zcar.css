@@ -1,0 +1,274 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #222;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    text-align: center;
+    background: url('R\ \(1\).jpg') no-repeat center center/cover;
+    color: rgb(231, 16, 16);
+    padding: 60px 20px;
+    width: 100%;
+} */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; 
+}
+
+/* Header */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #fff;
+}
+nav .head{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fef2f2;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: rgb(250, 247, 247);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background: rgba(231, 223, 223, 0.7);
+    border-radius: 6px;
+}
+nav .click {
+    display: flex;
+    column-gap: 20px;
+    margin: 20px;
+    padding: 5px;
+}
+nav .click input {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0043ff8c;
+    
+}
+nav .click .log {
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid blue;
+    background-color: white;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+}
+nav .click .sign {
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid blue;
+    background-color: rgb(107, 86, 154);
+    color: rgb(239, 239, 250);
+    text-decoration: none;
+}
+section.bich{
+    text-align: center;
+    /* width: 100%; */
+    /* height: 100vb; */
+    background: url('R (1).jpg');
+    background-size: cover;
+    background-position: center;
+}
+#bich
+ {
+     /* background: url('R.jpg') no-repeat center center/cover;  */
+     color: rgb(249, 246, 246);
+    text-align: center;
+    padding: 100px 20px;
+}
+.home {
+    background-color: whitesmoke;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .main-sec {
+    display: flex;
+    column-gap: 50px;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home .right {
+    width: 400px;
+    height: 300px;
+    margin: 78px;
+    padding: 30px;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(155deg, #a7ceff, #bfc9cb);
+}
+
+
+.home .left {
+    padding: 30px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    flex-direction: column;
+    width: 552px;
+    /* background-color: green; */
+}
+
+.home .left .btn input {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0043ff8c;
+}
+
+.home .main-sec .left .txt1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.home .right img {
+    width: 32vw;
+    border-radius: 20%;
+    filter: drop-shadow(20px 50px 25px #b3e3e3);
+}
+.car-listings .btnn{
+    /* height: 200px; */
+    padding: 100px;
+    align-items: center;
+
+}
+.car-listings .btnn .view {
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid blue;
+    background-color: rgb(235, 227, 227);
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+}
+.car-listings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.car-listings .btn{
+    /* color: red; */
+    background-color: red;
+    height: 10px;
+    width: 40px;
+    text-align: center;
+    align-items: center;
+    padding: 10px 30px;
+    /* border: none; */
+    border-radius: 10px;
+    cursor: pointer;
+    /* background-color: #0043ff8c; */
+}
+
+.car {
+    width: 30%;
+    background: #d9dfde;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.car img {
+    width: 100%;
+}
+
+.car .price {
+    font-weight: bold;
+    color: green;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+.whatsapp-btn {
+    background: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
